@@ -1,0 +1,302 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #111111;
+    color: white;
+  }
+
+  /* Style the navigation bar */
+  .navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .navbar a {
+    color: white;
+    display: inline-block;
+    font-size: 18px;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+  }
+
+  .navbar a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #D2B48C;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar a:hover {
+    /* Change the text color */
+    color: #D2B48C;
+  }
+
+  .navbar a:hover::after {
+    /* Expand the underline effect */
+    transform: scaleX(1);
+  }
+
+  /*Style homepage*/
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:10px;
+    width: 100%; Set the desired width
+    margin: 0 auto; /* Center the container horizontally */
+    margin-top: 65px; /* Shift the container down by 20 pixels */
+  }
+
+  .content{
+    flex: 1;
+    margin-right: 5%;
+    margin-left: 5%;
+
+  }
+
+  .image {
+    flex: 1;
+    margin-right: -15%;
+    margin-left: 5%;
+  }
+
+  .image img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .custom-link {
+    color: #DAA520; /* Set the link color */
+    text-decoration: none; /* Remove the underline */
+    font-weight: bold; /* Make the link text bold */
+    transition: color 0.3s; /* Add a transition effect for the color */
+  }
+
+  .custom-link:hover {
+    color: #D2B48C; /* Change the link color when the mouse hovers over it */
+    text-decoration: underline; /* Add an underline when the mouse hovers over the link */
+  }
+
+  /* Style the resume section */
+  #resume {
+    text-align: center;
+    padding: 25px;
+  }
+  hr {
+    border: none;
+    border-top: 3px solid #D2B48C;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  #download-section {
+    background-color: #black;
+    padding: 20px;
+    text-align: center;
+  }
+
+  #download-section p {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .download-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .download-button:hover {
+    background-color: #D2B48C;
+  }
+
+
+  /*contact */
+  .contact{
+    font-size: clamp(16px, 3vw, 32px); /* Minimum: 16px, Preferred: 3vw, Maximum: 32px */
+    margin: 40px 0;
+    text-align: center;
+    color: white;
+  }
+
+
+
+  /* About Me */
+  .main-heading {
+    font-size: 48px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .sub-heading {
+    font-size: 36px;
+    margin-top: 30px;
+  }
+
+  .sub-sub-heading {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+
+
+  footer {
+  left: 0;
+  bottom: 8%;
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 15px;
+  }
+
+  a:hover img {
+    opacity: 0.7;
+    transform: scale(1.20);
+    transition: all 0.3s ease-in-out;
+    filter: brightness(0.8) saturate(1.5); /* Adjust the image color */
+  }
+
+  .linkedin-icon {
+    fill: #fff; /* Set the initial fill color */
+    transition: fill 0.3s ease-in-out; /* Add a transition effect for the fill color */
+    width: 30px;
+    height: 30px;
+  }
+
+  .linkedin-icon:hover {
+    fill: #D2B48C; /* Set the desired fill color on hover */
+    transform: scale(1.35);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .github-icon {
+    fill: #fff; /* Set the initial fill color */
+    transition: fill 0.3s ease-in-out; /* Add a transition effect for the fill color */
+    width: 30px;
+    height: 30px;
+  }
+
+  .github-icon:hover {
+    fill: #D2B48C; /* Set the desired fill color on hover */
+    transform: scale(1.35);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .instagram-icon {
+    transition: fill 0.3s ease-in-out; /* Add a transition effect for the fill color */
+    width: 30px;
+    height: 30px;
+  }
+
+  .instagram-icon:hover {
+    fill: #D2B48C;
+    transform: scale(1.35);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .email-icon {
+    transition: fill 0.3s ease-in-out; /* Add a transition effect for the fill color */
+    width: 35px;
+    height: 35px;
+  }
+
+  .email-icon:hover {
+    fill: #D2B48C;
+    transform: scale(1.35);
+    transition: all 0.3s ease-in-out;
+  }
+
+
+  /*About me*/
+  .aboutme {
+    margin-left: 10%;
+  }
+
+  .sub-heading{
+    text-decoration: underline;
+  }
+
+
+
+  /* ABout mw 2.0 */
+  .about-me {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h1, h2 {
+    color: #D2B48C
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.intro, .experience, .interests, .goals, .contact {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.skills, .awards {
+    list-style-type: none;
+    font-size: 18px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.skills li, .awards li {
+    margin-bottom: 5px;
+}
